@@ -2,7 +2,7 @@ package = 'xitari'
 version = '0-0'
 
 source = {
-  url = 'git://github.com/Kaixhin/xitari.git'
+  url = 'git://github.com/lake4790k/xitari.git'
 }
 
 description = {
