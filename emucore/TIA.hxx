@@ -512,7 +512,7 @@ class TIA : public Device , public MediaSource
 
     // Used to convert value written in a motion register into 
     // its internal representation
-    const Int32 ourCompleteMotionTable[128][16] {
+    const Int32 ourCompleteMotionTable[128][16] = {
   { 0, -1, -2, -3, -4, -5, -6, -7,  8,  7,  6,  5,  4,  3,  2,  1}, // HBLANK
   { 0, -1, -2, -3, -4, -5, -6, -7,  8,  7,  6,  5,  4,  3,  2,  1}, // HBLANK
   { 0, -1, -2, -3, -4, -5, -6, -7,  8,  7,  6,  5,  4,  3,  2,  1}, // HBLANK
@@ -592,7 +592,7 @@ class TIA : public Device , public MediaSource
 };
 
     // Indicates if HMOVE blanks should occur for the corresponding cycle
-    const bool ourHMOVEBlankEnableCycles[128] {
+    const bool ourHMOVEBlankEnableCycles[128] = {
   true,  true,  true,  true,  true,  true,  true,  true,  true,  true,   // 00
   true,  true,  true,  true,  true,  true,  true,  true,  true,  true,   // 10
   true,  false, false, false, false, false, false, false, false, false,  // 20
